@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gaceta del Enriqueta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff6b6b, #feca57);
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #1e90ff; /* Azul moderno */
+        }
+        nav {
+            background-color: #1e90ff; /* Azul moderno */
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4682b4; /* Azul más oscuro para resaltar */
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #ff6b6b;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .article {
+            background-color: #feca57;
+            padding: 15px;
+            border-radius: 8px;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Gaceta del Enriqueta</h1>
+        <p>Una revista digital creada por los alumnos del colegio Enriqueta Aymer</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#secciones">Secciones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="section">
+        <h2>Bienvenidos</h2>
+        <p>Explora los artículos, imágenes y contenidos creativos elaborados por nuestros talentosos alumnos.</p>
+    </section>
+
+    <section id="secciones" class="section">
+        <h2>Secciones</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>Arte y Creatividad</h3>
+                <img src="https://via.placeholder.com/300" alt="Arte y creatividad">
+                <p>Descubre las obras de arte, manualidades y proyectos creativos de nuestros estudiantes.</p>
+            </div>
+            <div class="article">
+                <h3>Ciencia y Tecnología</h3>
+                <img src="https://via.placeholder.com/300" alt="Ciencia y tecnología">
+                <p>Explora los experimentos, investigaciones y avances tecnológicos creados en clase.</p>
+            </div>
+            <div class="article">
+                <h3>Deportes y Actividad Física</h3>
+                <img src="https://via.placeholder.com/300" alt="Deportes y actividad física">
+                <p>Conoce los logros deportivos y las actividades que fomentan la salud y el bienestar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Para más información, escríbenos a <a href="mailto:info@enriquetaaymer.edu">info@enriquetaaymer.edu</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 La Gaceta del Enriqueta. Colegio Enriqueta Aymer - Sagrados Corazones.</p>
+    </footer>
+</body>
+</html>
