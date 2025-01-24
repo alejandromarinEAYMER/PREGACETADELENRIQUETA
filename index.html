@@ -91,6 +91,51 @@
             color: #333;
             margin-bottom: 20px;
         }
+
+        /* Para pantallas de hasta 768px (tabletas y pantallas más pequeñas) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav a {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .articles {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .edition {
+        margin-bottom: 10px;
+    }
+}
+
+/* Para pantallas de hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .article {
+        padding: 10px;
+    }
+    }
+    .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
     </style>
 </head>
 <body>
