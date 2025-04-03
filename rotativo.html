@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotativo de Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            background: white;
+            padding: 20px 0;
+        }
+        .carousel-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+        .news-item {
+            min-width: 300px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #1e90ff;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .news-item a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="news-item"><a href="#">📢 ¡Nueva edición publicada! Descúbrela aquí.</a></div>
+            <div class="news-item"><a href="#">🎭 Concurso de relatos: Participa y gana premios.</a></div>
+            <div class="news-item"><a href="#">📸 Galería de fotos del último evento escolar.</a></div>
+            <div class="news-item"><a href="#">🏆 Entrevista exclusiva con los premiados de Enriqueta Awards.</a></div>
+        </div>
+    </div>
+</body>
+</html>
