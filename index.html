@@ -19,24 +19,12 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            font-weight: bold;
-            color: white;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2rem;
-            font-style: italic;
-        }
         nav {
-            background-color: #1e90ff; /* Azul moderno */
+            background-color: #1e90ff;
             padding: 15px;
             display: flex;
             justify-content: center;
             gap: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         nav a {
             color: white;
@@ -47,9 +35,6 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        nav a:hover {
-            background-color: #4682b4; /* Azul más oscuro para resaltar */
-        }
         .section {
             margin: 20px;
             padding: 20px;
@@ -57,85 +42,32 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #1e90ff;
+        .rotativo-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            background: #fff;
+            padding: 20px 0;
         }
-        footer {
-            background-color: #222;
-            color: white;
+        .rotativo {
+            display: inline-flex;
+            animation: scroll 20s linear infinite;
+        }
+        .rotativo .item {
+            display: inline-block;
+            background: #feca57;
+            padding: 15px;
+            margin: 0 10px;
+            border-radius: 8px;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .articles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .article {
-            background-color: #feca57;
-            padding: 15px;
-            border-radius: 8px;
-            color: #333;
+            min-width: 300px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .article img {
-            max-width: 100%;
-            border-radius: 8px;
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
         }
-        .edition {
-            background-color: #87ceeb;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        /* Para pantallas de hasta 768px (tabletas y pantallas más pequeñas) */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    header p {
-        font-size: 1rem;
-    }
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-    nav a {
-        font-size: 1rem;
-        padding: 10px;
-        margin: 5px 0;
-    }
-    .articles {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .edition {
-        margin-bottom: 10px;
-    }
-}
-
-/* Para pantallas de hasta 480px (móviles pequeños) */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-    nav a {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-    .article {
-        padding: 10px;
-    }
-    }
-    .articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
     </style>
 </head>
 <body>
@@ -153,67 +85,29 @@
 
     <section id="inicio" class="section">
         <h2>¡Bienvenidos a nuestra nueva revista digital!</h2>
-       
-        <p>Queridos lectores,</p>
-        <p>Con mucha ilusión os presentamos la versión digital de nuestra revista escolar. Aunque cambiamos el formato, mantenemos nuestra esencia: un espacio donde compartimos entrevistas a profesores, alumnos y Hermanas SSCC; crónicas de actividades, viajes, y relatos que reflejan la vida de nuestro colegio.</p>
-        <p>Este cambio nos permitirá llegar a más personas de forma ágil. ¡Gracias por ser parte de esta nueva etapa!
-        <p> Os invitamos a explorar y disfrutar activamente en este proyecto.</p>
-        <p>Atentamente,<br> La Redacción de la Gaceta</p>
+        <p>Queridos lectores, os presentamos la versión digital de nuestra revista escolar...</p>
     </section>
 
-    <section id="ediciones-anteriores" class="section">
-        <h2>Ediciones Anteriores</h2>
-        <div class="edition">
-            <h3>Edición 1 - Enero 2025</h3>
-            <p>Descubre nuestra primera edición con contenido único creado por los estudiantes.</p>
-            <a href="#">Leer más</a>
-        </div>
-        <div class="edition">
-            <h3>Edición 2 - Febrero 2025</h3>
-            <p>Conoce los nuevos artículos y secciones de esta edición.</p>
-            <a href="#">Leer más</a>
-        </div>
+    <section class="rotativo-container">
+        <div id="rotativo" class="rotativo"></div>
     </section>
 
     <section id="secciones" class="section">
         <h2>Secciones</h2>
-        <div class="articles">
-            <div class="article">
-                <h3>Entrevistas</h3>
-                <img src="https://via.placeholder.com/300" alt="Entrevistas">
-                <p>Descubre las conversaciones más interesantes con miembros destacados de nuestra comunidad educativa.</p>
-            </div>
-            <div class="article">
-                <h3>Crónicas del Enriqueta</h3>
-                <img src="https://via.placeholder.com/300" alt="Crónicas del Enriqueta">
-                <p>Lee los relatos y anécdotas que narran la vida cotidiana y los eventos más especiales de nuestro colegio.</p>
-            </div>
-            <div class="article">
-                <h3>Relatos para niños</h3>
-                <img src="https://via.placeholder.com/300" alt="Relatos para niños">
-                <p>Sumérgete en historias creadas por y para los más pequeños, llenas de imaginación y diversión.</p>
-            </div>
-            <div class="article">
-                <h3>Enriqueta "Awards"</h3>
-                <img src="https://via.placeholder.com/300" alt="Enriqueta Awards">
-                <p>Conoce a los alumnos y proyectos galardonados que brillan por su esfuerzo y dedicación.</p>
-            </div>
-            <div class="article">
-                <h3>Celebraciones especiales</h3>
-                <img src="https://via.placeholder.com/300" alt="Celebraciones especiales">
-                <p>Revive los momentos más destacados de nuestras festividades y eventos únicos.</p>
-            </div>
-        </div>
+        <p>Contenido de las secciones...</p>
     </section>
 
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <p>Para más información, escríbenos a <a href="mailto:info@eaymersscc.com">info@eaymersscc.com</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 La Gaceta del Enriqueta. Colegio Enriqueta Aymer - Sagrados Corazones.</p>
-    </footer>
+    <script>
+        async function cargarRotativo() {
+            try {
+                let response = await fetch('rotativo.html');
+                let data = await response.text();
+                document.getElementById('rotativo').innerHTML = data;
+            } catch (error) {
+                console.error('Error cargando el contenido rotativo:', error);
+            }
+        }
+        cargarRotativo();
+    </script>
 </body>
 </html>
-
