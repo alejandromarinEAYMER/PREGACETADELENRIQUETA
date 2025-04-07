@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    .rotativo-container {
-      width: 100%;
-      height: 180px; /* Puedes ajustar este alto según lo que necesites */
-      background-color: #e6f2ff; /* Azul suave para destacar la sección */
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      position: relative;
-      box-sizing: border-box;
-      padding: 10px 0;
+    body {
+      margin: 0;
+      padding: 0;
     }
 
-    .rotativo-strip {
-      display: inline-flex;
+    .rotativo-section {
+      width: 100vw; /* Ocupa toda la pantalla horizontalmente */
+      background-color: #e6f2ff;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 20px 0;
+    }
+
+    .rotativo-track {
+      display: flex;
+      width: max-content;
       animation: mover 60s linear infinite;
       gap: 20px;
     }
@@ -47,9 +49,9 @@
   </style>
 </head>
 <body>
-  <div class="rotativo-container">
-    <div class="rotativo-strip">
-      <!-- Elementos duplicados para rotación continua -->
+  <section class="rotativo-section">
+    <div class="rotativo-track">
+      <!-- Noticias duplicadas para bucle continuo -->
       <div class="rotativo-item">
         <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
         <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
@@ -65,7 +67,7 @@
         <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
         <a href="atapuerca.html">Leer más...</a>
       </div>
-      <!-- Repetimos los mismos para que no haya huecos -->
+      <!-- Repetimos para que no haya huecos -->
       <div class="rotativo-item">
         <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
         <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
@@ -82,6 +84,6 @@
         <a href="atapuerca.html">Leer más...</a>
       </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>
