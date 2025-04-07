@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotativo de Noticias</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .rotativo-container {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            background: white;
-            padding: 20px 0;
-            position: relative;
-        }
-        .rotativo-wrapper {
-            display: flex;
-            gap: 20px;
-            animation: scroll 12s linear infinite;
-        }
-        .rotativo-item {
-            display: inline-block;
-            background: #feca57;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            min-width: 250px;
-            max-width: 350px;
-            text-align: center;
-        }
-        .rotativo-item a {
-            display: block;
-            margin-top: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #1e90ff;
-        }
-        @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotativo de Noticias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .rotativo-container {
+      overflow: hidden;
+      width: 100%;
+      background: white;
+      padding: 20px 0;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .rotativo-item {
+      display: inline-block;
+      background: #feca57;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      min-width: 250px;
+      max-width: 350px;
+      text-align: center;
+      margin-right: 20px;
+      animation: scrollItem 18s linear infinite;
+    }
+
+    .rotativo-item a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1e90ff;
+    }
+
+    @keyframes scrollItem {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-400px); }
+    }
+  </style>
 </head>
 <body>
-    <div class="rotativo-container">
-        <div class="rotativo-wrapper">
-            <div class="rotativo-item">
-                <h3>Noticia 1</h3>
-                <p>Descripción breve de la primera noticia.</p>
-                <a href="noticia1.html">Leer más...</a>
-            </div>
-            <div class="rotativo-item">
-                <h3>Noticia 2</h3>
-                <p>Resumen interesante de la segunda noticia.</p>
-                <a href="noticia2.html">Leer más...</a>
-            </div>
-            <div class="rotativo-item">
-                <h3>Noticia 3</h3>
-                <p>Una breve introducción a la tercera noticia.</p>
-                <a href="noticia3.html">Leer más...</a>
-            </div>
-        </div>
+  <div class="rotativo-container">
+    <div class="rotativo-item">
+      <h3>Noticia 1</h3>
+      <p>Descripción breve de la primera noticia.</p>
+      <a href="noticia1.html">Leer más...</a>
     </div>
+    <div class="rotativo-item">
+      <h3>Noticia 2</h3>
+      <p>Resumen interesante de la segunda noticia.</p>
+      <a href="noticia2.html">Leer más...</a>
+    </div>
+    <div class="rotativo-item">
+      <h3>Noticia 3</h3>
+      <p>Una breve introducción a la tercera noticia.</p>
+      <a href="noticia3.html">Leer más...</a>
+    </div>
+  </div>
 </body>
 </html>
