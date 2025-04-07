@@ -1,89 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .rotativo-section {
-      width: 100vw; /* Ocupa toda la pantalla horizontalmente */
-      background-color: #e6f2ff;
-      overflow: hidden;
-      box-sizing: border-box;
-      padding: 20px 0;
-    }
-
-    .rotativo-track {
-      display: flex;
-      width: max-content;
-      animation: mover 60s linear infinite;
-      gap: 20px;
-    }
-
-    .rotativo-item {
-      flex: 0 0 auto;
-      background-color: #ffffff;
-      border: 2px solid #1e90ff;
-      border-radius: 10px;
-      padding: 15px;
-      min-width: 250px;
-      max-width: 300px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      font-size: 1rem;
-      color: #333;
-    }
-
-    .rotativo-item a {
-      text-decoration: none;
-      color: #1e90ff;
-      font-weight: bold;
-    }
-
-    @keyframes mover {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gaceta del Enriqueta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #1e90ff, #4682b4);
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        nav {
+            background-color: #1e90ff;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #4682b4;
+        }
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #1e90ff;
+        }
+        .rotativo-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            background: #e3f2fd;
+            padding: 20px 0;
+        }
+        .rotativo-container {
+            display: flex;
+            gap: 20px;
+            animation: scroll 30s linear infinite;
+        }
+        .rotativo-item {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 250px;
+            max-width: 400px;
+            display: inline-block;
+            white-space: normal;
+        }
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
 </head>
 <body>
-  <section class="rotativo-section">
-    <div class="rotativo-track">
-      <!-- Noticias duplicadas para bucle continuo -->
-      <div class="rotativo-item">
-        <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
-        <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
-        <a href="proyecto-3eso.html">Leer más...</a>
-      </div>
-      <div class="rotativo-item">
-        <p><strong>Entrevista a Sor Carmen</strong></p>
-        <p>Una mirada profunda a su vocación y experiencia.</p>
-        <a href="entrevista-sor-carmen.html">Leer más...</a>
-      </div>
-      <div class="rotativo-item">
-        <p><strong>Excursión a Atapuerca</strong></p>
-        <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
-        <a href="atapuerca.html">Leer más...</a>
-      </div>
-      <!-- Repetimos para que no haya huecos -->
-      <div class="rotativo-item">
-        <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
-        <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
-        <a href="proyecto-3eso.html">Leer más...</a>
-      </div>
-      <div class="rotativo-item">
-        <p><strong>Entrevista a Sor Carmen</strong></p>
-        <p>Una mirada profunda a su vocación y experiencia.</p>
-        <a href="entrevista-sor-carmen.html">Leer más...</a>
-      </div>
-      <div class="rotativo-item">
-        <p><strong>Excursión a Atapuerca</strong></p>
-        <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
-        <a href="atapuerca.html">Leer más...</a>
-      </div>
-    </div>
-  </section>
+    <header>
+        <h1>La Gaceta del Enriqueta</h1>
+        <p>La revista digital creada por alumnos y profesores del Colegio Enriqueta Aymer</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#secciones">Secciones</a>
+        <a href="#ediciones-anteriores">Ediciones Anteriores</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="section">
+        <h2>¡Bienvenidos a nuestra nueva revista digital!</h2>
+        <p>Queridos lectores,</p>
+        <p>Con mucha ilusión os presentamos la versión digital de nuestra revista escolar...</p>
+    </section>
+
+    <section id="rotativo" class="rotativo-wrapper">
+        <div class="rotativo-container">
+            <iframe src="rotativo.html" width="100%" height="150" style="border:none;"></iframe>
+        </div>
+    </section>
+
+    <section id="secciones" class="section">
+        <h2>Secciones</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>Entrevistas</h3>
+                <img src="https://via.placeholder.com/300" alt="Entrevistas">
+                <p>Descubre las conversaciones más interesantes...</p>
+            </div>
+            <div class="article">
+                <h3>Crónicas del Enriqueta</h3>
+                <img src="https://via.placeholder.com/300" alt="Crónicas del Enriqueta">
+                <p>Lee los relatos y anécdotas...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 La Gaceta del Enriqueta.</p>
+    </footer>
 </body>
 </html>
