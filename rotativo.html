@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotativo de Noticias</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .rotativo-container {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            background: white;
-            padding: 20px 0;
-            position: relative;
-        }
-        .rotativo-wrapper {
-            display: flex;
-            gap: 20px;
-            animation: scroll 12s linear infinite;
-        }
-        .rotativo-item {
-            display: inline-block;
-            background: #feca57;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            min-width: 250px;
-            max-width: 350px;
-            text-align: center;
-        }
-        .rotativo-item a {
-            display: block;
-            margin-top: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #1e90ff;
-        }
-        @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+    .rotativo-container {
+      width: 100%;
+      height: 180px; /* Puedes ajustar este alto según lo que necesites */
+      background-color: #e6f2ff; /* Azul suave para destacar la sección */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .rotativo-strip {
+      display: inline-flex;
+      animation: mover 60s linear infinite;
+      gap: 20px;
+    }
+
+    .rotativo-item {
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      border: 2px solid #1e90ff;
+      border-radius: 10px;
+      padding: 15px;
+      min-width: 250px;
+      max-width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .rotativo-item a {
+      text-decoration: none;
+      color: #1e90ff;
+      font-weight: bold;
+    }
+
+    @keyframes mover {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
 </head>
 <body>
-    <div class="rotativo-container">
-        <div class="rotativo-wrapper">
-            <div class="rotativo-item">
-                <h3>Noticia 1</h3>
-                <p>Descripción breve de la primera noticia.</p>
-                <a href="noticia1.html">Leer más...</a>
-            </div>
-            <div class="rotativo-item">
-                <h3>Noticia 2</h3>
-                <p>Resumen interesante de la segunda noticia.</p>
-                <a href="noticia2.html">Leer más...</a>
-            </div>
-            <div class="rotativo-item">
-                <h3>Noticia 3</h3>
-                <p>Una breve introducción a la tercera noticia.</p>
-                <a href="noticia3.html">Leer más...</a>
-            </div>
-        </div>
+  <div class="rotativo-container">
+    <div class="rotativo-strip">
+      <!-- Elementos duplicados para rotación continua -->
+      <div class="rotativo-item">
+        <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
+        <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
+        <a href="proyecto-3eso.html">Leer más...</a>
+      </div>
+      <div class="rotativo-item">
+        <p><strong>Entrevista a Sor Carmen</strong></p>
+        <p>Una mirada profunda a su vocación y experiencia.</p>
+        <a href="entrevista-sor-carmen.html">Leer más...</a>
+      </div>
+      <div class="rotativo-item">
+        <p><strong>Excursión a Atapuerca</strong></p>
+        <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
+        <a href="atapuerca.html">Leer más...</a>
+      </div>
+      <!-- Repetimos los mismos para que no haya huecos -->
+      <div class="rotativo-item">
+        <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
+        <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
+        <a href="proyecto-3eso.html">Leer más...</a>
+      </div>
+      <div class="rotativo-item">
+        <p><strong>Entrevista a Sor Carmen</strong></p>
+        <p>Una mirada profunda a su vocación y experiencia.</p>
+        <a href="entrevista-sor-carmen.html">Leer más...</a>
+      </div>
+      <div class="rotativo-item">
+        <p><strong>Excursión a Atapuerca</strong></p>
+        <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
+        <a href="atapuerca.html">Leer más...</a>
+      </div>
     </div>
+  </div>
 </body>
 </html>
-
