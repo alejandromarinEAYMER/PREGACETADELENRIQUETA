@@ -60,33 +60,6 @@
         .section h2 {
             color: #1e90ff;
         }
-        .carousel {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .carousel-track {
-            display: flex;
-            gap: 20px;
-            animation: scrollNews 30s linear infinite;
-        }
-        .news-item {
-            min-width: 300px;
-            background: #ffcc00;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @keyframes scrollNews {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
     </style>
 </head>
 <body>
@@ -104,14 +77,18 @@
         <h2>¡Bienvenidos a nuestra nueva revista digital!</h2>
         <p>Con mucha ilusión os presentamos la versión digital de nuestra revista escolar...</p>
     </section>
+    
+    <!-- Sección donde se muestra el rotativo -->
     <section id="rotativo" class="section">
-        <h2>Últimas Novedades</h2>
-        <div class="carousel">
-            <div class="carousel-track">
-                <iframe src="rotativo.html" width="100%" height="150px" style="border:none;"></iframe>
-            </div>
+        <h2>Últimas Noticias</h2>
+        <!-- Aquí se incluye el archivo rotativo.html -->
+        <div class="rotativo-container">
+            <!-- Aquí se carga el contenido de rotativo.html -->
+            <!-- Si el contenido está en un archivo rotativo.html -->
+            <iframe src="rotativo.html" width="100%" height="auto" frameborder="0"></iframe>
         </div>
     </section>
+    
     <section id="ediciones-anteriores" class="section">
         <h2>Ediciones Anteriores</h2>
         <div class="edition">
@@ -125,3 +102,4 @@
     </footer>
 </body>
 </html>
+
