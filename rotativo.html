@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <style>
     .rotativo-container {
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
       width: 100%;
-      background-color: #f0f8ff;
-      padding: 20px 0;
+      height: 180px; /* Puedes ajustar este alto según lo que necesites */
+      background-color: #e6f2ff; /* Azul suave para destacar la sección */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-sizing: border-box;
+      padding: 10px 0;
     }
 
     .rotativo-strip {
@@ -20,7 +23,7 @@
 
     .rotativo-item {
       flex: 0 0 auto;
-      background-color: #fff;
+      background-color: #ffffff;
       border: 2px solid #1e90ff;
       border-radius: 10px;
       padding: 15px;
@@ -39,14 +42,14 @@
 
     @keyframes mover {
       0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+      100% { transform: translateX(-50%); }
     }
   </style>
 </head>
 <body>
   <div class="rotativo-container">
     <div class="rotativo-strip">
-      <!-- Puedes duplicar, quitar o modificar estas cajas -->
+      <!-- Elementos duplicados para rotación continua -->
       <div class="rotativo-item">
         <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
         <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
@@ -62,8 +65,7 @@
         <p>Los alumnos de 1º Bachillerato visitan y aprenden sobre evolución humana.</p>
         <a href="atapuerca.html">Leer más...</a>
       </div>
-
-      <!-- Puedes duplicar para que el carrusel no deje huecos -->
+      <!-- Repetimos los mismos para que no haya huecos -->
       <div class="rotativo-item">
         <p><strong>Nuevo Proyecto en 3º ESO</strong></p>
         <p>Los alumnos presentan sus maquetas sobre energía renovable.</p>
