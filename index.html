@@ -60,6 +60,33 @@
         .section h2 {
             color: #1e90ff;
         }
+
+        /* Ajustar el tamaño de la sección rotativa */
+        #rotativo {
+            overflow: hidden; /* Asegurarse de que no aparezca scroll */
+            width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+            padding: 20px 0; /* Padding para mantener espacio alrededor del contenido */
+        }
+
+        .rotativo-container {
+            display: flex; /* Flexbox para que los elementos se alineen en fila */
+            gap: 20px; /* Espacio entre los elementos */
+            animation: scroll 12s linear infinite; /* Animación para mover los elementos */
+        }
+
+        .rotativo-item {
+            min-width: 300px; /* Asegurar un tamaño mínimo de cada item */
+            background: #feca57;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body>
@@ -78,14 +105,25 @@
         <p>Con mucha ilusión os presentamos la versión digital de nuestra revista escolar...</p>
     </section>
     
-    <!-- Sección donde se muestra el rotativo -->
     <section id="rotativo" class="section">
         <h2>Últimas Noticias</h2>
-        <!-- Aquí se incluye el archivo rotativo.html -->
+        <!-- Aquí empieza el contenedor del rotativo -->
         <div class="rotativo-container">
-            <!-- Aquí se carga el contenido de rotativo.html -->
-            <!-- Si el contenido está en un archivo rotativo.html -->
-            <iframe src="rotativo.html" width="100%" height="auto" frameborder="0"></iframe>
+            <div class="rotativo-item">
+                <h3>Noticia 1</h3>
+                <p>Descripción breve de la primera noticia.</p>
+                <a href="noticia1.html">Leer más...</a>
+            </div>
+            <div class="rotativo-item">
+                <h3>Noticia 2</h3>
+                <p>Resumen interesante de la segunda noticia.</p>
+                <a href="noticia2.html">Leer más...</a>
+            </div>
+            <div class="rotativo-item">
+                <h3>Noticia 3</h3>
+                <p>Una breve introducción a la tercera noticia.</p>
+                <a href="noticia3.html">Leer más...</a>
+            </div>
         </div>
     </section>
     
@@ -102,4 +140,3 @@
     </footer>
 </body>
 </html>
-
