@@ -5,14 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotativo de Noticias</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
         .rotativo-container {
+            overflow: hidden;
             white-space: nowrap;
             width: 100%;
             background: white;
@@ -28,6 +22,7 @@
             min-width: 250px;
             max-width: 350px;
             text-align: center;
+            margin-right: 20px;
         }
         .rotativo-item a {
             display: block;
@@ -40,7 +35,7 @@
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
-        .rotativo-container {
+        .rotativo-wrapper {
             display: flex;
             gap: 20px;
             animation: scroll 12s linear infinite;
@@ -49,20 +44,22 @@
 </head>
 <body>
     <div class="rotativo-container">
-        <div class="rotativo-item">
-            <h3>Noticia 1</h3>
-            <p>Descripción breve de la primera noticia.</p>
-            <a href="noticia1.html">Leer más...</a>
-        </div>
-        <div class="rotativo-item">
-            <h3>Noticia 2</h3>
-            <p>Resumen interesante de la segunda noticia.</p>
-            <a href="noticia2.html">Leer más...</a>
-        </div>
-        <div class="rotativo-item">
-            <h3>Noticia 3</h3>
-            <p>Una breve introducción a la tercera noticia.</p>
-            <a href="noticia3.html">Leer más...</a>
+        <div class="rotativo-wrapper">
+            <div class="rotativo-item">
+                <h3>Noticia 1</h3>
+                <p>Descripción breve de la primera noticia.</p>
+                <a href="noticia1.html">Leer más...</a>
+            </div>
+            <div class="rotativo-item">
+                <h3>Noticia 2</h3>
+                <p>Resumen interesante de la segunda noticia.</p>
+                <a href="noticia2.html">Leer más...</a>
+            </div>
+            <div class="rotativo-item">
+                <h3>Noticia 3</h3>
+                <p>Una breve introducción a la tercera noticia.</p>
+                <a href="noticia3.html">Leer más...</a>
+            </div>
         </div>
     </div>
 </body>
