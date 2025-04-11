@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revista digital La Gaceta del Enriqueta - Edición número 1">
+    <title>La Gaceta del Enriqueta - Número 1</title>
+
+<style>
+  /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3a5fbb;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+/* Estilos del Menú Principal */
+nav {
+    background-color: #1e90ff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4682b4;
+}
+
+/* Estilos del Submenú */
+/* Estilos del Submenú */
+
+.submenu {
+    background-color: #f1f1f1; /* Fondo gris claro para diferenciarlo */
+    padding: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.submenu .container {
+    display: flex;
+    justify-content: center;
+}
+
+.submenu ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el relleno */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si es necesario */
+    gap: 8px;
+}
+
+.submenu li {
+    display: inline-block;
+}
+
+.submenu a {
+    color: #333; /* Color de texto más oscuro para diferenciarlo del menú principal */
+    font-size: 1rem; /* Un poco más pequeño que en el menú principal */
+    font-weight: normal; /* Fuente normal para los enlaces */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #ddd; /* Un color más claro para el hover */
+    color: #1e90ff; /* Cambio de color de texto al pasar el mouse */
+}
+
+/* FIN Estilos del Submenú */
+/* FIN Estilos del Submenú */
+
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1a73e8;
+        }
+
+        article h3 {
+            color: #333;
+        }
+
+        article p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        article ul, article ol {
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+.poemas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+.poemas-container article {
+  background-color: #e2e2ff; /* Fondo claro para los artículos */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+@media (max-width: 768px) {
+  .poemas-container {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+}
+
+
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos adicionales para mejorar la experiencia visual */
+        h4 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ol li {
+            margin-bottom: 8px;
+        }
+
+        .article-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+</style>
+
+  
+</head>
+<body>
+  
+   <header>
+        <h1>La Gaceta del Enriqueta</h1>
+        <p><strong>Edición número 18 - Abril 2025</strong></p>
+    </header>
+  
+  <!-- MENU Principal -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#secciones">Secciones</a>
+        <a href="#ediciones-anteriores">Números anteriores</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+<!-- FIN DEL MENU Principal -->
+  
+  
+<!-- SUBMENU Principal -->
+  <nav class="submenu">
+    <div class="container">
+        <ul>
+            <li><a href="#Editorial">Editorial</a></li>
+            <li><a href="#Excursiones"> A la Nieve</a></li>
+            <li><a href="#excursion-micropolis"> A Micrópolis</a></li>
+            <li><a href="#excursion-sanpol"> Al Teatro San Pol</a></li>
+            <li><a href="#poemas">Poesía</a></li>
+            <li><a href="#madrid-cultural">Madrid Cultural</a></li>
+            <li><a href="#viajes">Viajes</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+          <li><a href="#recetas">Pasatiempos</a></li>
+        </ul>
+    </div>
+</nav>
+  
+ <!-- SUBMENU Principal -->
+
+  
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container">
+
+            <!-- Editorial -->
+            <section class="section">
+  <h2>El Editorial</h2>
+  <div class="etiquetas">
+    <span class="tag">#Editorial</span>
+        <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+              <p><strong>¡¡¡VOLVEMOS!!!</strong></p>
+  <p>Después de un parón, un triste parón, volvemos. Volvemos y volvemos con mucha ilusión, con la ilusión de ver en marcha de nuevo a un pilar fundamental de este nuestro colegio, nuestra Gaceta.</p>
+
+  <p>La Gaceta vuelve a rodar y a partir de ya, estamos de nuevo en el día a día del cole, para dar voz a nuestros alumnos, a nuestros profesores, a nuestros padres y madres, en consecuencia, el motor de este maravilloso colegio.</p>
+
+  <p>Nunca hemos perdido la ilusión en este proyecto y por eso volvemos hoy volvemos a estar ilusionadísimos. Hoy empezamos una nueva aventura, con un formato distinto pero innovador, con el mismo equipo, pero también con algún fichaje nuevo para contaros de primera mano la gran cantidad de cosas que nuestro cole hace durante el curso.</p>
+
+  <p>No perderemos nuestra esencia y volveremos a volcarnos en nuestras secciones habituales, grandes días del cole, nuestro voluntariado, salidas fuera del cole, entrevistas a nuestras hermanas, a nuestros profes, a nuestros antiguos alumnos, nuestras recomendaciones, muchas recetas, pasatiempo, humor, escribir es un arte, recomendaciones de lugares y un infinita etcétera… sin olvidarnos de posibles sorpresas de última hora.</p>
+
+  <p>Pues bien, esto no ha hecho nada más que comenzar. Ahora toca disfrutar del proyecto.</p>
+
+  <p><strong>La Gaceta</strong></p>
+</section>
+
+
+            <!-- Excursión a la Nieve -->
+
+          
+          <section class="section">
+  <h2>La excursión a la nieve</h2>
+  <div class="etiquetas">
+    <span class="tag">#Excursiones</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+
+  </div>
+  <p>Esta excursión ha sido de las mejores porque nos lo hemos pasado muy bien. Esta excursión ha sido muy barata porque la Comunidad de Madrid nos la ha otorgado. Aunque tuvimos que llevar la ropa de esquí, nos dejaron ellos los palos, los esquís y las botas.</p>
+
+  <p>Fuimos en autobús hasta la montaña, tardamos 30 minutos. Cuando llegamos andamos hasta llegar a la puerta. Nada más entrar nos empezaron a poner las botas y el casco, nos dieron los esquís y nos montamos en un telesilla para llegar a lo alto.</p>
+
+  <p>Cuando llegamos arriba nos enseñaron lo básico como la cuña (para frenar) o algo tan simple como avanzar. Nos separaron en grupos y empezamos a esquiar un poco. Los monitores eran muy amables y majos y también nos ayudaban en todo.</p>
+
+  <p>Subimos por una rampa para llegar arriba de una pequeña cuesta abajo. Nos enseñaron a tirarnos y a ir bajando y subiendo la velocidad. Llegó la hora de irnos y volvimos en el telesilla, volvimos en autobús otra media hora. La excursión duró toda la mañana.</p>
+
+  <p>Esta excursión fue inolvidable porque aprendimos a esquiar y también fue una experiencia nueva.</p>
+
+  <p><strong>Abril Torrijos</strong> (alumna de 5º de Primaria)</p>
+</section>
+
+
+            <!-- Excursión a Micrópolis -->
+
+          <section class="section">
+  <h2>Excursión a Micrópolix</h2>
+  <div class="etiquetas">
+    <span class="tag">#Excursiones</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+
+  </div>
+
+  <h3>Micrópolix (Donde los niños son adultos)</h3>
+
+  <p><strong>Micrópolix</strong> es una mini ciudad con altos edificios, tiendas, bancos, un ayuntamiento… bueno, todo lo básico. Donde los niños juegan a ser adultos: trabajando, comprando, viajando, sacándose un carné de conducir, presentándose a las elecciones o votando, etc.</p>
+
+  <p>Pero ahí hay diferencias: por cada actividad o trabajo te dan sellos y así llenas tu pasaporte. Con cinco sellos puedes ir al banco y te sacas una beca. Te tachan cinco sellos, te ponen un sello de “beca” (que es inválido como sello de actividad), y puedes elegir entre:</p>
+
+  <ul>
+    <li><strong>AVIÓN:</strong> simulador de piloto</li>
+    <li><strong>ESTACIÓN DE POLICÍA:</strong> atrapa a los ladrones y a los de la M.I.A. (Micrópolix Intelligent Agency), sin olvidar conducir un coche patrulla</li>
+    <li><strong>CRUCERO:</strong> simulador “Titanic” / cómo actuar en caso de emergencia</li>
+    <li><strong>DEPARTAMENTO DE BOMBEROS:</strong> tírate agarrado de las barras y pasa por la escalera de braquiación / pasamanos si quieres sobrevivir al incendio</li>
+  </ul>
+
+  <p>Una vez llegas a cualquiera de estas actividades, te piden el pasaporte, lo revisan, y si tienes beca, te dejan pasar. Si no, tienes que pagar.</p>
+
+  <p>Entre semana, en las visitas escolares, se trabaja con sellos. Los fines de semana o eventos se usa moneda oficial: <em>Eurix</em>.</p>
+
+  <p>Hay dos zonas:</p>
+  <ul>
+    <li><strong>Zona verde:</strong> consigues trabajo y ganas dinero (Eurix)</li>
+    <li><strong>Zona roja (zona de ocio):</strong> lo pierdes</li>
+  </ul>
+
+  <p>Fuimos 4º de Primaria, estuvimos desde las 9:30 hasta las 14:30, así que comimos allí.</p>
+
+  <p>Ha sido una experiencia inolvidable. Hemos hecho múltiples trabajos y nos han recompensado muy bien. Esperamos poder ir otra vez.</p>
+
+  <p>Ha sido muy divertido. Si quieres pasar un momento inolvidable, te lo recomiendo.</p>
+
+  <p><strong>Marwa Idrissi El Hasani</strong> (alumna de 4ºA de Primaria)</p>
+</section>
+          
+
+            <!-- Excursión a San Pol -->
+
+          <section class="section">
+  <h2>Excursión al Teatro San Pol</h2>
+  <div class="etiquetas">
+    <span class="tag">#Excursiones</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+
+  <p>Esta obra es maravillosa, se la han tenido que currar mucho.</p>
+
+  <p>Los alumnos de 3º y 4º de Primaria fuimos a ver la obra <strong>“Los Músicos de Bremen”</strong> al Teatro San Pol el <strong>20 de febrero de 2025</strong>.</p>
+
+  <p>La obra consistía en que cuatro animales habían sido maltratados:</p>
+  <ul>
+    <li><strong>El burro:</strong> porque era viejo y no podía trabajar en el campo.</li>
+    <li><strong>El gallo:</strong> porque su dueña quería cocinarlo.</li>
+    <li><strong>El perro:</strong> porque otros animales lo maltrataban y su dueña estaba enferma.</li>
+    <li><strong>La gata:</strong> porque cantaba por la noche, no dejaba dormir y le tiraban zapatillas.</li>
+  </ul>
+
+  <p>Un día, ninguno de ellos soportó más su vida y decidieron marcharse. Se fueron encontrando por el camino y, como a todos les gustaba cantar, formaron un grupo de músicos.</p>
+
+  <p>Para mí, esta obra fue estupenda. Los personajes se lo aprendieron genial, las decoraciones eran muy bonitas… Fue perfecta y está muy bien hecha.</p>
+
+  <p>Yo la recomiendo porque me divertí mucho. Nos hacían reír y cantaban fenomenal.</p>
+
+  <p><strong>Julia Martín Jiménez</strong> (4º de Primaria)</p>
+</section>
+
+
+            <!-- Poemas de Alumnos -->
+          
+          
+         <section class="section">
+  <h2>Poemas de alumnos</h2>
+  <div class="etiquetas">
+    <span class="tag">#Poemas</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+
+  <div class="poemas-container">
+    <article>
+      <h3>Fútbol</h3>
+      <p>
+        El balón rueda con gran alegría,<br>
+        corren los niños con gran emoción,<br>
+        late el pecho fuerte el corazón,<br>
+        brilla el partido con luz de energía.<br>
+        Pasan y giran con gran valentía,<br>
+        gritar vamos con toda pasión,<br>
+        buscan el gol con gran dedicación,<br>
+        sueñan con gloria en cada jugada.<br>
+        La cancha es un mundo lleno de magia,<br>
+        donde un equipo vence al temor,<br>
+        con cada esfuerzo, el triunfo se gana.<br>
+        Y si hay derrota, no hay que dudar,<br>
+        pues el fútbol siempre es mejor,<br>
+        jugar con el alma y nunca parar.
+      </p>
+      <p><em>David y Aarón (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>Tu nombre (amor)</h3>
+      <p>
+        Quiero olvidar tu nombre<br>
+        Pero nada me ayuda.<br>
+        Todo me hace recordarla,<br>
+        Desde el sol hasta la lluvia.<br>
+        Quiero olvidar tu nombre<br>
+        aunque sea una letra,<br>
+        que sé la primera, <br>
+        así ni saber cómo empieza.
+      </p>
+      <p><em>Fabiana, Nerea y Mariam (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>Odio</h3>
+      <p>
+        El odio crece dentro del corazón,<br>
+        Como fuego que no se puede apagar,<br>
+        Nos quita la paz y la razón,<br>
+        Y nos hace solo pensar en pelear.<br>
+        Es un sentimiento que duele mucho,<br>
+        Y no deja ver lo que está bien,<br>
+        Te consume y te hace el corazón sucio,<br>
+        Y lo único que quieres es venganza también.
+      </p>
+      <p><em>Claudia, Alba, Lucía e Iria (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>Reflexión</h3>
+      <p>
+        No todo está donde debe estar<br>
+        porque a veces tu propio cuerpo te puede traicionar.<br>
+        A veces los problemas y las enfermedades<br>
+        humanas, pueden jugarte malas pasadas.<br>
+        A pesar de las veces que tropiezas<br>
+        te tienes que levantar<br>
+        porque tu obligación es no parar.
+      </p>
+      <p><em>Hugo, Álvaro, Miguel y Samuel (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>Mi amor por ti</h3>
+      <p>
+        Toda mi tristeza te llevaste,<br>
+        Con tu mirada me colmaste<br>
+        Y fuiste tú la única que me escuchaste,<br>
+        Menos mal que me encontraste.<br>
+        Se me olvidó lo fácil que es reír,<br>
+        Y yo sin tu amor no sé vivir,<br>
+        Por favor, mi amor,<br>
+        No te vayas a ir.
+      </p>
+      <p><em>Alex, Laura, Amanda, Mateo y Andrea (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>Yo y yo mismo</h3>
+      <p>
+        Que estás diciendo de mí,<br>
+        si como yo no hay ninguno,<br>
+        de tu cara me aburrí,<br>
+        yo de ti soy el sol del mundo.<br>
+        todo el mundo gira alrededor de mí,<br>
+        yo soy el mejor,<br>
+        esta cosa no consigue fin<br>
+        soy superior.
+      </p>
+      <p><em>Fabián, María y Emili (2º B ESO)</em></p>
+    </article>
+
+    <article>
+      <h3>¿Qué habrá?</h3>
+      <p>
+        La constante pelea de la luna y el sol<br>
+        hace que las horas se deslicen como arena entre los dedos,<br><br>
+        cada idea, motivación, sueño que tan solo se quedó en pensamiento<br>
+        mientras las hojas danzan con el paso de las estaciones en cada momento,<br><br>
+        y una monotonía constante que desemboca en falso aprovechamiento.<br>
+        Las arrugas contando aquellas historias recordadas con miedo o cariño<br><br>
+        y en vez de formar lo nuestro, pisamos las huellas de lo que otro ha vivido.<br>
+        Ese miedo de abandonar la orilla para adentrarse en el profundo mar<br><br>
+        Y llegas al final de la carretera pensando ¿Qué habrá?
+      </p>
+      <p><em>David Merino (4º B ESO)</em></p>
+    </article>
+  </div>
+</section>
+
+
+          
+          
+
+            <!-- Madrid Cultural -->
+<section class="section">
+  <h2>Madrid Cultural: Ruta Smith - Naturaleza y aventura cerca de Siete Picos</h2>
+  
+  <div class="etiquetas">
+    <span class="tag">#MadridCultural</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+
+  </div>
+
+  <article>
+    <p>
+      Hola de nuevo, queridos lectores de la gaceta del Enriqueta. Si buscas un plan perfecto para una excursión en plena naturaleza, la Ruta Smith, en la Sierra de Guadarrama, es ideal para descubrir senderos mágicos y vistas impresionantes.
+    </p>
+    <p>
+      Si bien es una ruta un poco exigente, esta es sin duda, apta tanto para familias como para amantes del senderismo más experimentados, que deseen disfrutar de un día rodeados de pinos, aire puro y paisajes únicos. Es una ruta cercana a las cumbres de los Siete Picos, en el término municipal de Cercedilla. Por lo que la opción de ir en transporte público resulta un poco más difícil, ya que deberás subir al puerto de Navacerrada para comenzar. Y para comenzar, hagámoslo con la historia, por su origen.
+    </p>
+    <p>
+      La Ruta Smith debe su nombre a Edward Smith, un montañero inglés que exploró estos caminos a finales del siglo XIX. No puede parecer extraño que sea un inglés el que funda esta ruta, pero no debería ser así. Durante mediados del siglo XIX, más o menos 1850, la naturaleza más cercana se vuelve muy atractiva para personas que no pueden realizar esos viajes en barco, esas grandes expediciones con fama de ser grandes aventuras. Por eso por toda Europa, y no dejamos por ello fuera a España, surgen grupos que buscan conocer mejor lo que tiene a simple vista. Las montañas, van a ser uno de sus primeros objetivos. De esos comienzos surgirán asociaciones de montaña, y se irán haciendo cumbre en cada vez más montañas. Las montañas de toda Europa, van a ser objeto de paseos, pequeñas escaladas. Algo parecido le pasará a otras zonas del mundo en donde los viajeros pondrán sus ojos y se llegarán a redescubrir grandes civilizaciones antiguamente olvidadas. En ejemplo perfecto podrían ser también el área de Mesopotamia y Egipto.
+    </p>
+    <p>
+      Mejor vuelvo, que me estoy llendo por las ramas. Con Edward Smith, tenemos al típico viajero de la época, los cuales van narrando en un diario, van haciendo dibujos, escribiendo poemas, y recogiendo platos, recetas, vestidos, etc. Así con su diario, el sendero se ha convertido en una de las rutas más transitadas y queridas del Parque Nacional de la Sierra de Guadarrama.
+    </p>
+    <p>
+      <strong>El recorrido:</strong><br>
+      El sendero comienza en el Puerto de Navacerrada, a 1.850 metros de altitud. La primera parte del camino atraviesa un precioso pinar de pino silvestre, con sombra y aire fresco. Tras caminar unos 20 minutos, se abre el paisaje y aparecen las espectaculares vistas de los Siete Picos, un conjunto de cumbres rocosas que parecen sacadas de un cuento.
+    </p>
+    <p>
+      La ruta es un sendero cómodo y bien señalizado, con poca dificultad técnica, aunque conviene llevar buen calzado. El recorrido completo es de unos 10 kilómetros, ida y vuelta, y se puede realizar en unas 3 o 4 horas, dependiendo del ritmo y las paradas.
+    </p>
+    <p>
+      Nos vamos a encontrar con una muy rica fauna y flora. A lo largo del recorrido es posible avistar aves como el águila calzada o el carbonero garrapinos, además de ardillas y, con algo de suerte, algún corzo en la lejanía. El entorno natural es espectacular durante todas las estaciones: en primavera está lleno de flores, en verano es un refugio fresco, en otoño los tonos dorados del bosque son impresionantes y en invierno se puede encontrar nieve, lo que convierte el paseo en un auténtico paisaje de postal.
+    </p>
+    <p>
+      <strong>Consejos prácticos:</strong><br>
+      ● Lleva agua y algo de comida; aunque es un recorrido accesible, no hay fuentes durante el trayecto.<br>
+      ● No olvides recoger tu basura y respetar el entorno.<br>
+      ● Si vas en invierno, consulta el estado de la nieve y lleva ropa adecuada.<br>
+      ● No olvides la cámara: cada tramo del sendero regala panorámicas para recordar.<br>
+      ● Si puedes lleva palos de caminar, bastones, que te ayudarán a hacerlo con menos esfuerzo.<br>
+      ● También si tienes, lleva unos prismáticos, ya que las vistas son preciosas y merece la pena seguir el vuelo de algún ave que nos encontremos.
+    </p>
+    <p>
+      En definitiva, la Ruta Smith es un plan perfecto para desconectar, aprender sobre la naturaleza y disfrutar de un día al aire libre con amigos, familia o compañeros de colegio. Quizás podríais hacer una quedada varias familias. Bueno, me despido hasta otra ocasión.
+    </p>
+
+    <h4>Imágenes recomendadas:</h4>
+    <ul>
+      <li>Mapa de la ruta sacado de la revista especializada Desnivel: <a href="https://www.desnivel.com/images/2024/11/camino-schmid-ge-251-14.jpg" target="_blank">Ver Mapa</a></li>
+    </ul>
+  </article>
+</section>
+
+
+<section class="madrid-cultural">
+
+    <h2>El Museo de las Colecciones Reales en Madrid: un viaje a la historia de España</h2>
+      <div class="etiquetas">
+    <span class="tag">#MadridCultural</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+  
+    <p>¿Te imaginas un lugar donde puedas ver tronos de reyes, armaduras de caballeros, tapices gigantes, carruajes, joyas y obras de arte creadas para reinas y monarcas? ¡Ese lugar existe! Se llama Museo de las Colecciones Reales, y está en Madrid, justo al lado del Palacio Real y la Catedral de la Almudena.</p>
+
+    <p>Este museo abrió sus puertas en 2023 y es uno de los más importantes de España, porque guarda los tesoros más valiosos que los reyes españoles han ido reuniendo a lo largo de más de 500 años. Aquí puedes viajar a través de la historia de nuestro país, desde los Reyes Católicos hasta la actualidad, sin salir de Madrid. Todas estas colecciones reales, estaban anteriormente en su gran mayoría a poca distancia del museo actual, en el Palacio Real.</p>
+
+    <p>La creación del museo fue un desafío, pues la ubicación debería permitir ligarlo fácilmente con el Palacio Real. Se escogió el lateral que quedaba a la derecha de la Catedral de la Almudena. Allí el proyecto se desarrolló de forma subterránea. Este hecho lo convierte en algo nuevo y desconocido. El museo está construido en parte bajo tierra, en un espacio moderno, gigante y con enormes rampas y escaleras que parecen sacadas de una película futurista. Desde arriba se puede ver el Palacio Real, y al entrar, descubres un mundo lleno de historia.</p>
+
+    <p>Las salas están ordenadas cronológicamente de modo que puedas dar un paseo histórico. Para que te pueda servir de guía, te explicaré lo que hay en cada planta:</p>
+    <ul>
+        <li><strong>Primera planta:</strong> piezas del Renacimiento y el Barroco, cuando reinaban Carlos I y Felipe II.</li>
+        <li><strong>Segunda planta:</strong> objetos del siglo XVIII, época de Carlos III y Carlos IV, y del siglo XIX, con Isabel II y Alfonso XII.</li>
+        <li><strong>Tercera planta:</strong> recorrido hasta el siglo XX, con piezas relacionadas con Alfonso XIII y la historia reciente de la monarquía.</li>
+    </ul>
+
+    <p>De todo lo que se puede ver, te voy a hacer una lista de lo más llamativo:</p>
+    <ul>
+        <li>Una maravillosa colección de tapices gigantescos tejidos a mano, que decoraban palacios y cuentan historias como si fueran cómics medievales.</li>
+        <li>La colección de los carruajes reales, destacando el <em>Gran carruaje de Carlos III</em>, tan grande que tiene hasta esculturas doradas.</li>
+        <li>Una fantástica colección de espadas, armaduras y escudos que usaban los reyes y caballeros en batallas o ceremonias.</li>
+        <li>Las pinturas y retratos de artistas como Goya o Velázquez, muchas de ellas salvadas del antiguo Alcázar tras un incendio en 1734.</li>
+        <li>Relojes, muebles, tapices, esculturas y joyas que decoraban los palacios reales, mostrando el lujo y el gusto artístico de los reyes.</li>
+    </ul>
+
+    <p>En la elaboración del museo se han utilizado pantallas, proyecciones y maquetas para hacerlo más fácil de entender y divertido para niños y jóvenes. El crear un museo es una tarea muy difícil, y en este caso, se ha hecho a las mil maravillas.</p>
+
+    <p>Otro detalle a valorar es el entorno en el que se ubica el museo, el cual además es excepcionalmente hermoso por sus vistas. Os invito a que lo visiten y os dejéis atrapar por sus tesoros.</p>
+
+    <h3>Información práctica</h3>
+    <ul>
+        <li><strong>Dónde está:</strong> Cuesta de la Vega, junto al Palacio Real de Madrid.</li>
+        <li><strong>Cómo llegar:</strong> Metro Ópera o autobús.</li>
+        <li><strong>Horarios:</strong> De martes a domingo, por la mañana y la tarde. (Consulta horarios actualizados en su web oficial).</li>
+        <li><strong>Más información:</strong> <a href="https://www.patrimonionacional.es">www.patrimonionacional.es</a></li>
+    </ul>
+
+    <h3>Imágenes recomendadas para ilustrar el artículo:</h3>
+    <ul>
+        <li><a href="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_Fachada.jpg" target="_blank"><img src="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_Fachada.jpg" alt="Fachada del museo" width="300" /></a></li>
+        <li><a href="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_CarruajeCarlosIII.jpg" target="_blank"><img src="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_CarruajeCarlosIII.jpg" alt="Carruaje de Carlos III" width="300" /></a></li>
+        <li><a href="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_SalaTapices.jpg" target="_blank"><img src="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_SalaTapices.jpg" alt="Sala de tapices" width="300" /></a></li>
+        <li><a href="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_VistasTerraza.jpg" target="_blank"><img src="https://www.patrimonionacional.es/sites/default/files/2023-07/MuseoColeccionesReales_VistasTerraza.jpg" alt="Vista panorámica desde la terraza" width="300" /></a></li>
+    </ul>
+</section>
+          
+            <!-- Viajes -->
+
+         <section id="viajes">
+    <h2>Ecuador</h2>
+          <div class="etiquetas">
+    <span class="tag">#Viajes</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+           
+    <p>
+        Ecuador es un país que se extiende por el ecuador en la costa oeste de Sudamérica. Sus diversos pasajes abarcan la selva del Amazonas, las zonas altas andinas y las islas Galápagos de abundante fauna. En las laderas de los Andes, a una elevación de 2.850 metros, Quito, su capital, es famosa por su centro colonial español que se ha conservado intacto por mucho tiempo, con palacios decorados del siglo XVI y XVII, y sitios religiosos, como la ornamentada Iglesia de la Compañía de Jesús.
+    </p>
+    <p>
+        Ecuador está ubicado sobre la línea ecuatorial, en América del Sur, por lo cual su territorio se encuentra en ambos hemisferios. Limita al norte con Colombia y al sur y al este con Perú. Al oeste limita con el Océano Pacífico. La extensión del país es de 256.370 kilómetros cuadrados.
+    </p>
+    
+    <h3>Vida en Ecuador</h3>
+    <p>
+        Ecuador es un país bendecido con una gran belleza natural gracias a sus diversos paisajes, un servicio de salud de la más alta calidad, deliciosa comida, coste de vida accesible y habitantes muy amables. Si estás considerando mudarte a Ecuador, puede que desees conocer algunas de las principales características de la forma de vida en el país.
+    </p>
+
+    <ul>
+        <li><strong>El sistema de salud en Ecuador:</strong> La salud en Ecuador es uno de los aspectos más destacables del país. Su sistema médico se encuentra entre los mejores del continente y la atención por parte de los profesionales es sumamente óptima. Su sistema sanitario se divide en sectores público y privado. La atención médica pública es totalmente gratuita y no se discrimina a ninguna persona.</li>
+        <li><strong>La economía en Ecuador:</strong> La economía ecuatoriana se dolarizó en el año 2000 tras una fuerte crisis en su economía que desestabilizó gran parte del país. En la actualidad, Ecuador presenta una economía estable y sin margen inflacionario. Adicionalmente, se exportan diversos productos, como el café, el arroz, el cacao o las bananas. La agricultura es uno de los pilares más importantes en la economía del país.</li>
+        <li><strong>El transporte público en Ecuador:</strong> Ecuador ofrece un óptimo sistema de transporte público, con un costo económico y un funcionamiento eficiente y seguro. Los buses en Ecuador se encuentran equipados con sistema de cámaras de seguridad y GPS. Por otra parte, los pagos pueden realizarse tanto con efectivo como con tarjetas inteligentes.</li>
+        <li><strong>La comida en Ecuador:</strong> Los alimentos suelen tener precios muy asequibles en Ecuador. Al mismo tiempo, los precios se mantendrán invariables independientemente de si haces tus compras en una gran cadena de supermercados o en un pequeño mercado rural. Los gastos alimentarios para una pareja en Ecuador serán de alrededor de 70 dólares al mes.</li>
+    </ul>
+    
+    <h3>Lugares para visitar</h3>
+    <ul>
+        <li><strong>Parque de las Iguanas (Guayaquil)</strong></li>
+        <li><strong>Playa de Mompiche</strong></li>
+        <li><strong>Columpio del Fin del Mundo (Baños)</strong></li>
+        <li><strong>Mitad del Mundo (Quito)</strong></li>
+        <li><strong>Islas Galápagos</strong></li>
+    </ul>
+  
+
+      <p><strong>Por: Pablo León 4ºB ESO</strong></p>
+
+</section>
+
+          
+            <!-- Recetas -->
+<section id="recetas">
+    <h2>Recetas Saludables</h2>
+
+    <p>Como bien sabes, esta sección está pensada para disfrutar en familia con recetas sencillas, saludables y apetecibles. Hoy os dejamos una versión saludable del postre más típico para estas fechas: <strong>Las Torrijas</strong>. Esta versión, según su cocinero Roberto Bosquet, ¡está brutal!</p>
+
+    <h3>Torrijas Saludables</h3>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>Rebanadas de pan, en esta ocasión ha sido brioche.</li>
+        <li>1 litro de leche o bebida vegetal.</li>
+        <li>200 ml de nata caliente o leche de coco.</li>
+        <li>200 g de pasta de dátil (dátiles remojados 10’ en agua caliente y triturados hasta conseguir una pasta).</li>
+        <li>La piel de media naranja.</li>
+        <li>Canela y vainilla al gusto.</li>
+        <li>Mantequilla.</li>
+    </ul>
+
+    <h4>Preparación</h4>
+    <ol>
+        <li>Pon la leche, la nata, la pasta de dátil, la piel de naranja, la canela y la vainilla en un cazo.</li>
+        <li>Calienta y, antes de que empiece a hervir, retíralo del fuego. Este proceso es clave para que los ingredientes infusionen y se integren bien.</li>
+        <li>Déjalo atemperar un poco.</li>
+        <li>Introduce las rebanadas de pan hasta que se empapen.</li>
+        <li>Escurre ligeramente.</li>
+        <li>Funde en una sartén un poco de mantequilla y marca las rebanadas que has sacado de la leche.</li>
+        <li>Cuando las saques de la sartén, añade un poco de endulzante (azúcar, eritritol, inulina, azúcar de coco...) y con un soplete o un metal caliente, fúndelo hasta que se haga caramelo.</li>
+        <li>Decora con lo que más te guste y disfruta.</li>
+    </ol>
+
+    <h3>Brownie Saludable</h3>
+
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>3 plátanos maduros para mayor dulzura.</li>
+        <li>2 huevos.</li>
+        <li>35 g de cacao puro.</li>
+        <li>1 puñado de anacardos tostados o nueces.</li>
+        <li>1 puñado de chocolate picado, al menos del 70%.</li>
+    </ul>
+
+    <h4>Preparación</h4>
+    <ol>
+        <li>Machaca los plátanos hasta hacerlos puré.</li>
+        <li>Mézclalos con los huevos y el cacao.</li>
+        <li>Añade los anacardos o nueces y el chocolate picado, y mezcla hasta que todo esté bien integrado.</li>
+        <li>Pasa la mezcla a un molde.</li>
+        <li>Hornéalo:</li>
+        <ul>
+            <li>20 minutos a 170° en airfryer.</li>
+            <li>20 minutos a 180° en el horno.</li>
+            <li>5 minutos aproximadamente, en el microondas a máxima potencia.</li>
+        </ul>
+        <li>Ha llegado el momento de disfrutarlo.</li>
+    </ol>
+</section>    
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 La Gaceta del Enriqueta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
