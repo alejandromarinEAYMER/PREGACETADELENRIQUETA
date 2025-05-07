@@ -1,4 +1,9 @@
 /* Estilos básicos */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f8; /* Fondo suave para contrastar con los colores vivos */
