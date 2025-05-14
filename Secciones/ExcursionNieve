@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revista digital La Gaceta del Enriqueta - Edición número 1">
+    <title>La Gaceta del Enriqueta - Número 1</title>
+    <link rel="stylesheet" href="estiloSecciones.css">
+</head>
+<body>
+  
+   <header>
+        <h1>La Gaceta del Enriqueta</h1>
+        <p><strong>Edición número 18 - Abril 2025</strong></p>
+    </header>
+  
+  <!-- MENU Principal -->
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/index.html#secciones">Secciones</a>
+        <a href="/index.html/#ediciones-anteriores">Números anteriores</a>
+        <a href="/index.html/#contacto">Contacto</a>
+    </nav>
+<!-- FIN DEL MENU Principal -->
+  
+  
+<!-- SUBMENU Principal -->
+  <nav class="submenu">
+    <div class="container">
+        <ul>
+            <li><a href="#Editorial">Editorial</a></li>
+            <li><a href="#ExcursionNieve"> A la Nieve</a></li>
+            <li><a href="#ExcursionMicropolis"> A Micrópolis</a></li>
+            <li><a href="#ExcursionSanPol"> Al Teatro San Pol</a></li>
+            <li><a href="#Poemas">Poesía</a></li>
+            <li><a href="#MadridCulturalRutaSmith">Madrid Cultural</a></li>
+            <li><a href="#MadridCulturalColeccionesReales">Madrid Cultural</a></li>
+            <li><a href="#Viajes">Viajes</a></li>
+            <li><a href="#Recetas">Recetas</a></li>
+          <li><a href="#Pasatiempos">Pasatiempos</a></li>
+        </ul>
+    </div>
+</nav>
+  
+ <!-- SUBMENU Principal -->
+
+  
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container">
+
+  <!-- Excursión a la Nieve -->
+
+          
+          <section class="section" id="ExcursionNieve">
+  <h2>La excursión a la nieve</h2>
+  <div class="etiquetas">
+    <span class="tag">#Excursiones</span>
+    <span class="tag">#Numero 18 - Abril 2025</span>
+
+  </div>
+  <p>Esta excursión ha sido de las mejores porque nos lo hemos pasado muy bien. Esta excursión ha sido muy barata porque la Comunidad de Madrid nos la ha otorgado. Aunque tuvimos que llevar la ropa de esquí, nos dejaron ellos los palos, los esquís y las botas.</p>
+
+  <p>Fuimos en autobús hasta la montaña, tardamos 30 minutos. Cuando llegamos andamos hasta llegar a la puerta. Nada más entrar nos empezaron a poner las botas y el casco, nos dieron los esquís y nos montamos en un telesilla para llegar a lo alto.</p>
+
+  <p>Cuando llegamos arriba nos enseñaron lo básico como la cuña (para frenar) o algo tan simple como avanzar. Nos separaron en grupos y empezamos a esquiar un poco. Los monitores eran muy amables y majos y también nos ayudaban en todo.</p>
+
+  <p>Subimos por una rampa para llegar arriba de una pequeña cuesta abajo. Nos enseñaron a tirarnos y a ir bajando y subiendo la velocidad. Llegó la hora de irnos y volvimos en el telesilla, volvimos en autobús otra media hora. La excursión duró toda la mañana.</p>
+
+  <p>Esta excursión fue inolvidable porque aprendimos a esquiar y también fue una experiencia nueva.</p>
+
+  <p><strong>Abril Torrijos</strong> (alumna de 5º de Primaria)</p>
+</section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 La Gaceta del Enriqueta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
