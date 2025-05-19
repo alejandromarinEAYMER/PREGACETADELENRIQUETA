@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Revista digital La Gaceta del Enriqueta - Edición número 1">
+    <title>La Gaceta del Enriqueta - Número 1</title>
+    <link rel="stylesheet" href="estiloSecciones.css">
+</head>
+<body>
+  
+   <header>
+        <h1>La Gaceta del Enriqueta</h1>
+        <p><strong>Edición número 18 - Abril 2025</strong></p>
+    </header>
+  
+  <!-- MENU Principal -->
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/index.html#secciones">Secciones</a>
+        <a href="/index.html/#ediciones-anteriores">Números anteriores</a>
+        <a href="/index.html/#contacto">Contacto</a>
+    </nav>
+<!-- FIN DEL MENU Principal -->
+  
+  
+<!-- SUBMENU Principal -->
+  <nav class="submenu">
+    <div class="container">
+        <ul>
+            <li><a href="#Editorial">Editorial</a></li>
+            <li><a href="#ExcursionNieve"> A la Nieve</a></li>
+            <li><a href="#ExcursionMicropolis"> A Micrópolis</a></li>
+            <li><a href="#ExcursionSanPol"> Al Teatro San Pol</a></li>
+            <li><a href="#Poemas">Poesía</a></li>
+            <li><a href="#MadridCulturalRutaSmith">Madrid Cultural</a></li>
+            <li><a href="#MadridCulturalColeccionesReales">Madrid Cultural</a></li>
+            <li><a href="#Viajes">Viajes</a></li>
+            <li><a href="#Recetas">Recetas</a></li>
+          <li><a href="#Pasatiempos">Pasatiempos</a></li>
+        </ul>
+    </div>
+</nav>
+  
+ <!-- SUBMENU Principal -->
+
+  
+    <!-- Contenido Principal -->
+    <main>
+    <style>
+    /* Estilos básicos */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Fondo suave para contrastar con los colores vivos */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4f98;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadimos sombra suave */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Estilos del Menú Principal */
+nav {
+    background-color: #2e10ff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #h5h5h5; /* Azul más oscuro en hover */
+    transform: scale(1.05);
+}
+
+/* Submenú */
+.submenu {
+    background-color: #4f98;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.submenu .container {
+    display: flex;
+    justify-content: center;
+}
+
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+
+.submenu li {
+    display: inline-block;
+}
+
+.submenu a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #d32f2f; /* Rojo brillante en hover */
+    color: white;
+}
+
+/* Estilo de las Secciones */
+main {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: lightblue;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #1976d2; /* Azul para los encabezados */
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #d32f2f; /* Rojo para los subtítulos */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+article ul, article ol {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+/* Estilo de la sección de Poemas */
+.poemas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.poemas-container article {
+    background-color: #fbe9e7; /* Fondo suave con un toque de rosa para los poemas */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poemas-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .poemas-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #1976d2; /* Azul para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mejoras visuales generales */
+h4 {
+    color: #333;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+.article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    <style/>
+        <div class="container">
+
+            <!-- Poesía -->
+            <section class="section" id="Editorial">
+  <h2>Literatura</h2>
+  <div class="etiquetas">
+    <span class="tag">#Editorial</span>
+        <span class="tag">#Numero 18 - Abril 2025</span>
+  </div>
+              <p><strong>¡¡¡VOLVEMOS!!!</strong></p>
+  <p>En esta página podrás encontrar poesía, relatos, recomendaciones literarias... De alumnos y profesores.Si tienen alguna sugerencia que quieran publicar, mandarla al correo del colegio y la publicaremos aquí!</p>
+
+ 
+  <p>Pues bien, esto no ha hecho nada más que comenzar. Ahora toca disfrutar del proyecto.</p>
+
+  <p><strong>La Gaceta</strong></p>
+</section>
+ 
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 La Gaceta del Enriqueta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
