@@ -90,40 +90,55 @@ nav a:hover {
             100% { transform: translateX(-100%); }
         }
 
+
+/*Esto es lo nuevo añadido para las Secciones en el Inicio*/
+
+#secciones {
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
 .secciones-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.seccion-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tarjeta-seccion {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 8px solid #1e90ff; /* Azul por defecto */
 }
 
-.seccion-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.tarjeta-seccion h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #1e90ff;
 }
 
-/* Tonos pastel en rojos y azules */
-.pastel-rojo {
-    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+.tarjeta-seccion p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
 }
 
-.pastel-azul {
-    background: linear-gradient(135deg, #1e90ff, #4682b4);
+.tarjeta-seccion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-  
+/* Colores personalizados por sección */
+.tarjeta-pastoral { border-top-color: #e53935; }
+.tarjeta-excursiones { border-top-color: #1e88e5; }
+.tarjeta-madrid { border-top-color: #43a047; }
+.tarjeta-viajes { border-top-color: #fb8c00; }
+.tarjeta-recetas { border-top-color: #8e24aa; }
+.tarjeta-entrevistas { border-top-color: #f4511e; }
+.tarjeta-literatura { border-top-color: #3949ab; }
+.tarjeta-ciencia { border-top-color: #00acc1; }
+.tarjeta-deportes { border-top-color: #c2185b; }
+.tarjeta-pasatiempos { border-top-color: #6d4c41; }
