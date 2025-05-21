@@ -89,4 +89,41 @@ nav a:hover {
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
+
+.secciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.seccion-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tonos pastel en rojos y azules */
+.pastel-rojo {
+    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+}
+
+.pastel-azul {
+    background: linear-gradient(135deg, #1e90ff, #4682b4);
+}
+
   
