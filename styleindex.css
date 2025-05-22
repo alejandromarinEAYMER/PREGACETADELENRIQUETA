@@ -185,6 +185,27 @@ body, html {
   max-width: 100%;
   overflow-x: hidden;
 }
+/* Alinear rotativo y footer con secciones */
+#rotativo,
+footer {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer estilizado */
+footer {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
 
 
 
