@@ -208,7 +208,7 @@ footer .footer-logo {
     display: inline-block; /* para que esté en línea con el texto si cabe */
     vertical-align: middle;
     margin-left: 10px;
-    width: 14vw; /* un poco más grande */
+    width: 18vw; /* un poco más grande */
     max-width: 140px;
     height: auto;
 }
