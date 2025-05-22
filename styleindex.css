@@ -205,6 +205,12 @@ footer {
 footer p {
   margin: 5px 0;
 }
+footer .footer-logo {
+    display: block;
+    margin: 10px auto 0 auto; /* centrado horizontal y margen arriba */
+    width: 10vw; /* tamaño pequeño relativo al ancho de pantalla */
+    max-width: 100px; /* límite máximo */
+    height: auto;
 
 
 
