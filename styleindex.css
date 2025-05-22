@@ -175,6 +175,8 @@ nav a:hover {
 .color-literatura  { background-color: #3949ab; }
 .color-ciencia     { background-color: #00acc1; }
 .color-pasatiempos { background-color: #6d4c41; }
+.color-editorial { background-color: #d3d3d3; }
+
 
 /* Previene scroll horizontal */
 * {
