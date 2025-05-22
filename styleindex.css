@@ -176,5 +176,15 @@ nav a:hover {
 .color-ciencia     { background-color: #00acc1; }
 .color-pasatiempos { background-color: #6d4c41; }
 
+/* Previene scroll horizontal */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 
