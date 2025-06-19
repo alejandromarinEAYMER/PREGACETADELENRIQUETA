@@ -68,7 +68,7 @@ nav a:hover {
         .rotativo-container {
             display: flex; /* Flexbox para que los elementos se alineen en fila */
             gap: 20px; /* Espacio entre los elementos */
-            animation: scroll 30s linear infinite; /* Animación para mover los elementos */
+            animation: scroll 25s linear infinite; /* Animación para mover los elementos */
         }
 
    #rotativo:hover .rotativo-container {
